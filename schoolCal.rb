@@ -254,7 +254,7 @@ end
 
 def printCal year, month, type     # Prints calendar for given year, month, as array or list
 
-  if type.upcase == "ARRAY"           # Array Calendar
+  if type.upcase == "ARRAY" || type.upcase == "A"          # Array Calendar
 
     stringArray = (stringCalA year, month)
 
@@ -289,7 +289,7 @@ puts "What month?"
 month = gets.to_i
 puts
 puts
-puts "Do you want an array or list?"
+puts "Do you want an (a)rray or (l)ist?"
 type = gets.chomp
 puts
 puts
